@@ -98,7 +98,7 @@ label {
 label:hover {
     background-color: #e0e0e0;
 } 
-ul {
+aside ul {
   list-style: none;
   margin: 0;
   padding: 0 20px;
@@ -106,7 +106,7 @@ ul {
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
-ul a {
+aside ul a {
     text-decoration: none;
     color: rgb(26, 26, 26);
 }
@@ -114,7 +114,7 @@ input:checked + label + ul {
   max-height: 200px;
 }
 
-ul li {
+aside ul li {
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
 }
@@ -213,6 +213,7 @@ label a {
     border-radius: 10px;
     padding-bottom: 0;
 }
+
 @media screen and (max-width: 950px) {
     .welcome h1 {
         font-size: 30px;
@@ -238,3 +239,57 @@ label a {
         gap: 1em;
     }
 }
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+footer {
+    background-color: rgb(33, 36, 39);
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+footer h4 {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+.footer-flex ul li {
+    text-align: left;
+    padding-bottom: 3px;
+    font-size: 15px;
+    list-style: none;
+    color: white;
+}
+footer > ul{
+    padding: 3px;
+    font-size: 15px;
+    list-style: none;
+    color: white;
+}
+.map {
+    width: 45%;
+}
+.iframe {
+    border-radius: 0;
+    height: 300px;
+}
+.last p{
+    display: inline;    
+    background-color: rgb(33, 36, 39);
+    color: rgb(170, 170, 170);
+}
+.c {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+.lightrope {
+    text-align: center;white-space: nowrap;overflow: hidden;z-index: 10;margin: 0% 0 0;margin-top:-14px;padding: 0;pointer-events: none;width: 100%;height: 60px;opacity: .8;}.lightrope li {position: relative;animation-fill-mode: both;animation-iteration-count: infinite;list-style: none;margin: 18px;padding: 0;width: 10px;height: 16px;border-radius: 50%;display: inline-block;background: #00f7a5;box-shadow: 0 4.66667px 24px 3px #00f7a5;animation-name: flash-1;animation-duration: 4s;}.lightrope li:nth-child(odd) {background: #0ff;box-shadow: 0 4.66667px 24px 3px rgba(0,255,255,.5);animation-name: flash-2;}.lightrope li:nth-child(4n+2) {background: #f329a2c9;box-shadow: 0 4.66667px 24px 3px #f7009496;animation-name: flash-3;animation-duration: 2.2s;}.lightrope li:nth-child(odd) {animation-duration: 3.6s;}.lightrope li:nth-child(3n+1) {animation-duration: 2.8s;}.lightrope li:before {content: "";position: absolute;background: #222;width: 7.5px;height: 6px;border-radius: 3px;top: -4px;left: 1px;}.lightrope li:after {content: "";top: -13px;left: 5px;position: absolute;width: 45px;height: 18.66667px;border-bottom: 2px solid #222;border-radius: 50%;}.lightrope li:last-child:after {content: none;}.lightrope li:first-child {margin-left: -40px;}@keyframes flash-1 {0%,100% {background: #00f7a5;box-shadow: 0 4.66667px 24px 3px #00f7a5;}50% {background: rgba(0,247,165,.4);box-shadow: 0 4.66667px 24px 3px rgba(0,247,165,.2);}}@keyframes flash-2 {0%,100% {background: #0ff;box-shadow: 0 4.66667px 24px 3px #0ff;}50% {background: rgba(0,255,255,.4);box-shadow: 0 4.66667px 24px 3px rgba(0,255,255,.2);}}@keyframes flash-3 {0%,100% {background: #f70094;box-shadow: 0 4.66667px 24px 3px #f70094;}50% {background: rgba(247,0,148,.4);box-shadow: 0 4.66667px 24px 3px rgba(247,0,148,.2);}
+} 
